@@ -1,31 +1,22 @@
 import 'package:flutter/material.dart';
-import 'screens/splasscreen.dart';
+import 'screens/sebha_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Route Contacts',
+      title: 'Islami App',
       theme: ThemeData(
-        primaryColor: Color(0xFF29384D),
-        scaffoldBackgroundColor: Color(0xFF29384D),
-        appBarTheme: AppBarTheme(
-          backgroundColor: Color(0xFF29384D),
-          titleTextStyle: TextStyle(
-            color: Color(0xFFFFF1D4),
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
+        primarySwatch: Colors.amber,
       ),
-      home: SplashScreen(),
+      home: const TasbeehScreen(),
     );
   }
 }
